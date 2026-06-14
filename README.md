@@ -1,42 +1,108 @@
-Driver Drowsiness Classification using Eye Blink and Head Movement (KNN)
+\# Driver Drowsiness Detection System
 
-Overview
-This project aims to detect driver drowsiness by analyzing eye blink rate and head movement patterns using the K-Nearest Neighbors (KNN) algorithm. It can help prevent accidents by alerting drowsy drivers in real-time.
 
-Features
-Real-time eye blink detection
-Head movement analysis
-KNN-based classification for drowsiness detection
-Alerts when drowsiness is detected
 
-Project Structure
-driver-drowsiness-detection/
-│
-├── dataset/                 # Collected data (eye blink, head position)
-├── src/                     # Main source code
-│   ├── eye_blink_detector.py
-│   ├── head_movement_tracker.py
-│   └── knn_classifier.py
-├── model/                   # Saved models
-├── utils/                   # Helper scripts
-├── README.md
-└── requirements.txt
+\## Overview
 
-Installation
-git clone https://github.com/vamshiambatipudi/driver-drowsiness-detection.git
-cd driver-drowsiness-detection
+
+
+This project is a real-time Driver Drowsiness Detection System built using Python, OpenCV, and Dlib. It detects driver fatigue by monitoring eye closure through a webcam. When the driver's eyes remain closed for a certain duration, an alarm sound is triggered to alert the driver.
+
+
+
+\## Features
+
+
+
+\* Real-time face detection
+
+\* Eye landmark detection using Dlib
+
+\* Eye Aspect Ratio (EAR) calculation
+
+\* Continuous alarm sound for drowsiness detection
+
+\* Live webcam monitoring
+
+\* Visual warning alerts on screen
+
+
+
+\## Technologies Used
+
+
+
+\* Python
+
+\* OpenCV
+
+\* Dlib
+
+\* SciPy
+
+\* NumPy
+
+\* Imutils
+
+
+
+\## Installation
+
+
+
+```bash
+
+git clone https://github.com/Nithya200505/Driver\_Drowsiness\_Detection.git
+
+cd Driver\_Drowsiness\_Detection
+
 pip install -r requirements.txt
 
-Algorithm
-Machine Learning Algorithm: K-Nearest Neighbors (KNN)
+```
 
-Features used: blink rate, head tilt, frequency of nodding, etc.
 
-Output: Open - Score/ Close - Score
 
-Requirements
-Python 3.x
-OpenCV
-dlib or mediapipe (for facial landmarks)
-scikit-learn
-numpy, matplotlib
+\## Run the Project
+
+
+
+```bash
+
+python users/dlibfatigue/Fatigue\_Detection.py
+
+```
+
+
+
+\## Controls
+
+
+
+Press \*\*Q\*\* to close the application.
+
+
+
+\## Future Enhancements
+
+
+
+\* Yawn detection
+
+\* Head pose estimation
+
+\* Mobile notifications
+
+\* Deep learning-based drowsiness detection
+
+\* Driver analytics dashboard
+
+
+
+\## Author
+
+
+
+Nithya Sri
+
+
+
