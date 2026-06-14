@@ -6,7 +6,7 @@
 
 
 
-This project is a real-time Driver Drowsiness Detection System built using Python, OpenCV, and Dlib. It detects driver fatigue by monitoring eye closure through a webcam. When the driver's eyes remain closed for a certain duration, an alarm sound is triggered to alert the driver.
+This project is a real-time Driver Drowsiness Detection System developed using Python, OpenCV, and Dlib. It monitors the driver's eyes through a webcam and detects signs of fatigue using the Eye Aspect Ratio (EAR) method. When the driver's eyes remain closed for a certain period, an alarm sound is triggered to alert the driver.
 
 
 
@@ -20,11 +20,11 @@ This project is a real-time Driver Drowsiness Detection System built using Pytho
 
 \* Eye Aspect Ratio (EAR) calculation
 
-\* Continuous alarm sound for drowsiness detection
+\* Continuous alarm when drowsiness is detected
 
 \* Live webcam monitoring
 
-\* Visual warning alerts on screen
+\* Visual warning messages on screen
 
 
 
@@ -46,6 +46,36 @@ This project is a real-time Driver Drowsiness Detection System built using Pytho
 
 
 
+\## Project Structure
+
+
+
+```text
+
+Driver\_Drowsiness\_Detection/
+
+│
+
+├── users/
+
+│   └── dlibfatigue/
+
+│       └── Fatigue\_Detection.py
+
+│
+
+├── shape\_predictor\_68\_face\_landmarks.dat
+
+├── requirements.txt
+
+├── README.md
+
+└── .gitignore
+
+```
+
+
+
 \## Installation
 
 
@@ -55,6 +85,8 @@ This project is a real-time Driver Drowsiness Detection System built using Pytho
 git clone https://github.com/Nithya200505/Driver\_Drowsiness\_Detection.git
 
 cd Driver\_Drowsiness\_Detection
+
+
 
 pip install -r requirements.txt
 
@@ -78,11 +110,27 @@ python users/dlibfatigue/Fatigue\_Detection.py
 
 
 
-Press \*\*Q\*\* to close the application.
+\* Press \*\*Q\*\* to close the application.
 
 
 
-\## Future Enhancements
+\## How It Works
+
+
+
+1\. Detects the face using Dlib's frontal face detector.
+
+2\. Extracts facial landmarks using the 68-point landmark model.
+
+3\. Calculates Eye Aspect Ratio (EAR).
+
+4\. Monitors eye closure duration.
+
+5\. Triggers a continuous alarm when drowsiness is detected.
+
+
+
+\## Future Improvements
 
 
 
@@ -90,9 +138,9 @@ Press \*\*Q\*\* to close the application.
 
 \* Head pose estimation
 
-\* Mobile notifications
+\* Mobile alerts
 
-\* Deep learning-based drowsiness detection
+\* Deep learning-based fatigue detection
 
 \* Driver analytics dashboard
 
